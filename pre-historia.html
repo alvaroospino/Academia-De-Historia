@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Prehistoria</title>
+    <link rel="stylesheet" href="Styles-prehistoria.css">
+</head>
+
+<body>
+    <!-- Hero Section -->
+    <header class="hero-header">
+
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h1>La Prehistoria</h1>
+            <p>Un viaje a través del tiempo para descubrir nuestros orígenes</p>
+            <button class="timeline-nav-button" onclick="scrollToContent()">
+                Comenzar el viaje <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Navegación Principal -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <h2 style="color: white;">Prehistoria</h2>
+            <div class="nav-links">
+                <a href="#introduccion" class="nav-link">Introducción</a>
+                <a href="#galeria" class="nav-link">Galería</a>
+                <a href="index.html" class="nav-link">Inicio</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Sección de Introducción -->
+        <section id="introduccion" class="content-card">
+            <h2>Introducción a la Prehistoria</h2>
+            <div class="interactive-timeline">
+                <div class="timeline-navigation">
+                    <button class="timeline-nav-button" onclick="showPeriod('paleolitico')">
+                        Paleolítico
+                    </button>
+                    <button class="timeline-nav-button" onclick="showPeriod('mesolitico')">
+                        Mesolítico
+                    </button>
+                    <button class="timeline-nav-button" onclick="showPeriod('neolitico')">
+                        Neolítico
+                    </button>
+                </div>
+                <div id="period-content">
+                    <!-- El contenido se cargará dinámicamente -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Línea de Tiempo Interactiva -->
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content-card">
+                    <h3>4 millones de años atrás</h3>
+                    <p>Aparición de los primeros homínidos</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content-card">
+                    <h3>2.5 millones de años atrás</h3>
+                    <p>Inicio del Paleolítico - Primeras herramientas</p>
+                </div>
+            </div>
+            <!-- Más elementos de línea temporal si se desean agregar  -->
+        </div>
+
+        <!-- Galería Interactiva -->
+        <section id="galeria" class="gallery">
+            <div class="gallery-item">
+                <img src="pintura-paleolitica.jpg" alt="Pinturas rupestres">
+                <div class="gallery-caption">
+                    <h3>Arte Rupestre</h3>
+                    <p>Pinturas encontradas en cuevas paleolíticas</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="civilizacion-primitiva.jfif" alt="Pinturas rupestres">
+                <div class="gallery-caption">
+                    <h3>Arte Rupestre</h3>
+                    <p>Civilizacion primitiva del arte prehistorico</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="evoluciones-primitivas.jfif" alt="Pinturas rupestres">
+                <div class="gallery-caption">
+                    <h3>Arte Rupestre</h3>
+                    <p>Evolucion primitiva de la prehistoria</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="personaje-primitivo.jfif" alt="Pinturas rupestres">
+                <div class="gallery-caption">
+                    <h3>Arte Rupestre</h3>
+                    <p>PPersonaje primitivo de la prehistoria </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="pinturas-primitiva.jfif" alt="Pinturas rupestres">
+                <div class="gallery-caption">
+                    <h3>Arte Rupestre</h3>
+                    <p>Pinturas encontradas en cuevas paleolíticas creadas en la epoca prehistorica</p>
+                </div>
+            </div>
+            <!-- Más elementos de galería -->
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 Portal de Historia Alvaro Ospino: Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script-prehistoria.js"></script>
+</body>
+
+</html>
